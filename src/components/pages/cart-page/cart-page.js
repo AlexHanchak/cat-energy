@@ -25,7 +25,7 @@ const CartPage = ({items, total, onIncrease, onDecrease, onDelete}) => {
                 <tbody>
                 {
                     items.map((item) => {
-                        const {id, title, weight, taste, count, price, total} = item;
+                        const {id, title, weight, taste, count, price} = item;
                         return (
                             <tr key={item.id}>
                                 <td>{title}</td>
@@ -57,14 +57,14 @@ const CartPage = ({items, total, onIncrease, onDecrease, onDelete}) => {
 
                 </tbody>
             </table>
-            <div className="total">
-                Total: 1000р
-            </div>
+            {/*<div className="total">*/}
+            {/*    Total: 1000р*/}
+            {/*</div>*/}
         </Fragment>
     )
 };
 
-const mapStateToProps = ({cartItems, orderTotal}) => {
+const mapStateToProps = ({shoppingCart:{cartItems, orderTotal}}) => {
     return {
         items: cartItems,
         total: orderTotal

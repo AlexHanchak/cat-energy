@@ -5,7 +5,7 @@ import {BrowserRouter as Router} from 'react-router-dom';
 
 import App from './components/app';
 import ErrorBoundry from "./components/error-boundry";
-import FoodstoreService from "./services/foodstore-service";
+import {FoodstoreService} from "./services/foodstore-service";
 import {FoodstoreServiceProvider} from "./components/foodstore-service-context";
 import store from "./store";
 import './res.sass';
@@ -24,4 +24,3 @@ ReactDOM.render(
     </Provider>
     , document.getElementById('root')
 );
-

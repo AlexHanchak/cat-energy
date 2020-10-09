@@ -1,0 +1,59 @@
+[debug] [2020-01-20T11:51:09.854Z] ----------------------------------------------------------------------
+[debug] [2020-01-20T11:51:09.857Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init
+[debug] [2020-01-20T11:51:09.857Z] CLI Version:   7.12.1
+[debug] [2020-01-20T11:51:09.857Z] Platform:      linux
+[debug] [2020-01-20T11:51:09.857Z] Node Version:  v13.6.0
+[debug] [2020-01-20T11:51:09.858Z] Time:          Mon Jan 20 2020 13:51:09 GMT+0200 (Eastern European Standard Time)
+[debug] [2020-01-20T11:51:09.858Z] ----------------------------------------------------------------------
+[debug] [2020-01-20T11:51:09.858Z] 
+[debug] [2020-01-20T11:51:09.867Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-01-20T11:51:09.868Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /mnt/5116e595-5fa0-4dae-9d33-e7701c8c6e90/Code/CodeSource/whitelabel/cat-energy
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2020-01-20T11:51:50.418Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-01-20T11:51:50.418Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-01-20T11:51:50.830Z] <<< HTTP RESPONSE 200
+[debug] [2020-01-20T11:51:50.837Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects?pageSize=100  
+ 
+[debug] [2020-01-20T11:51:51.330Z] <<< HTTP RESPONSE 200
+[info] i  Using project body-energy (body-energy)
+[info] 
+=== Database Setup
+[info] 
+[info] Firebase Realtime Database Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2020-01-20T11:51:59.507Z] >>> HTTP REQUEST GET https://body-energy.firebaseio.com/.settings/rules.json  
+ 
+[debug] [2020-01-20T11:52:00.330Z] <<< HTTP RESPONSE 200
+[info] ✔  Database Rules for body-energy have been downloaded to database.rules.json.
+[info] Future modifications to database.rules.json will update Database Rules when you run
+[info] firebase deploy.
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 

@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import FoodListItem from "../food-list-item";
+import {bindActionCreators} from "redux";
 import {connect} from 'react-redux';
 
 import {WithFoodstoreService} from "../hoc";
@@ -49,15 +50,15 @@ class FoodListContainer extends Component {
     };
 }
 
-const mapStateToProps = ({foods, loading, error}) => {
+const mapStateToProps = ({ foodList: {foods, loading, error}}) => {
     return {foods, loading, error};
 };
 
 const mapDispatchToProps = (dispatch, {foodstoreService}) => {
-    return {
-        fetchFoods: fetchFoods(foodstoreService, dispatch),
-        onAddedToCart: (id) => dispatch(foodAddedToCart(id))
-    }
+    return bindActionCreators({
+        fetchFoods: fetchFoods(foodstoreService),
+        onAddedToCart: foodAddedToCart
+    }, dispatch);
 };
 
 export default compose(

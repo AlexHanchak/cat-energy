@@ -19,28 +19,28 @@ const foodsError = (error) => {
     };
 };
 
-export const foodAddedToCart = (bookId) => {
+export const foodAddedToCart = (foodId) => {
     return {
         type: 'FOOD_ADDED_TO_CART',
-        payload: bookId
+        payload: foodId
     };
 };
 
-export const foodRemovedFromCart = (bookId) => {
+export const foodRemovedFromCart = (foodId) => {
     return {
         type: 'FOOD_REMOVED_FROM_CART',
-        payload: bookId
+        payload: foodId
     };
 };
 
-export const allFoodsRemovedFromCart = (bookId) => {
+export const allFoodsRemovedFromCart = (foodId) => {
     return {
         type: 'ALL_FOODS_REMOVED_FROM_CART',
-        payload: bookId
+        payload: foodId
     };
 };
 
-const fetchFoods =  (foodstoreService, dispatch) => () => {
+const fetchFoods = (foodstoreService) => () => (dispatch) => {
     dispatch(foodsRequested());
     foodstoreService.getFoods()
         .then((data) => dispatch(foodsLoaded(data)))

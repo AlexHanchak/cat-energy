@@ -1,5 +1,9 @@
+import 'firebase/auth';
+import 'firebase/firestore';
 
-export default class FoodstoreService {
+import {Component} from 'react';
+
+class FoodstoreService extends Component {
 
     data = [
         {
@@ -8,57 +12,65 @@ export default class FoodstoreService {
             weight: 500,
             taste: 'Курица',
             price: 700,
-            img: require('../images/chicken-small-desktop@1x.webp')},
+            img: require('../images/chicken-small-desktop@1x.webp')
+        },
         {
             id: 2,
             title: 'CAT ENERGY PRO 1000 Г',
             weight: 1000,
             taste: 'Курица',
             price: 1000,
-            img: require('../images/chicken-big-desktop@1x.webp')},
+            img: require('../images/chicken-big-desktop@1x.webp')
+        },
         {
             id: 3,
             title: 'CAT ENERGY PRO 500 Г',
             weight: 500,
             taste: 'Рыба',
             price: 700,
-            img: require('../images/fish-small-desktop@1x.webp')},
+            img: require('../images/fish-small-desktop@1x.webp')
+        },
         {
             id: 4,
             title: 'CAT ENERGY PRO 1000 Г',
             weight: 1000,
             taste: 'Рыба',
             price: 1000,
-            img: require('../images/fish-big-desktop@1x.webp')},
+            img: require('../images/fish-big-desktop@1x.webp')
+        },
         {
             id: 5,
             title: 'CAT ENERGY PRO 500 Г',
             weight: 500,
             taste: 'Гречка',
             price: 700,
-            img: require('../images/buckwheat-small-desktop@1x.webp')},
+            img: require('../images/buckwheat-small-desktop@1x.webp')
+        },
         {
             id: 6,
             title: 'CAT ENERGY PRO 1000 Г',
             weight: 1000,
             taste: 'Гречка',
             price: 1000,
-            img: require('../images/buckwheat-big-desktop@1x.webp')},
+            img: require('../images/buckwheat-big-desktop@1x.webp')
+        },
         {
             id: 7,
             title: 'CAT ENERGY PRO 500 Г',
             weight: 500,
             taste: 'Рис',
             price: 700,
-            img: require('../images/rice-small-desktop@1x.webp')}
+            img: require('../images/rice-small-desktop@1x.webp')
+        }
     ];
 
     getFoods() {
-        return new Promise((resolve, reject) => {
-            setTimeout(() => {
-                resolve(this.data);
-                reject(new Error('Something bad happened =('));
-            }, 700)
+        return new Promise((resolve) => {
+            resolve(this.data);
         })
     }
 }
+
+export {
+    FoodstoreService
+};

@@ -13,8 +13,8 @@ const FoodListItem = ({food, onAddedToCart}) => {
                 <p>Цена: {price} р.</p>
                 <button
                     onClick={onAddedToCart}
-                    className="btn btn-success add-to-cart">
-                    Add to Cart
+                    className="addToCart">
+                    ЗАКАЗАТЬ
                 </button>
             </div>
         </Fragment>
