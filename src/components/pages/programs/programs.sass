@@ -11,18 +11,64 @@
     width: 30%
     margin-bottom: 40px
     font-weight: bold
-  form
-    #topForm
-      background: red
+  
 
-    #cData
-      background: blue
+  #topForm
     
-    #comm
-      background: green
+    #tfl
+      display: flex
+      flex-direction: column
+      width: 100%
+  
+      input
+        margin-left: 10px
+        
+        
 
-    #more
-      background: pink
+    #tfr
+
+      #tfrRadio
+        display: flex
+        flex-direction: column
+        border: solid 1px rgb(25,25,25)
+        width: 60%
+
+  #cData
+    
+    h3
+        color: $buttonsColor
+
+    #conactD
+      display: flex      
+      
+      input 
+        border: 1px solid rgb(25,25,25)
+        margin-right: 20px
+    
+    
+  #comm
+
+    h3
+        color: $buttonsColor
+
+    textarea
+      border: 1px solid rgb(25,25,25)
+      border-radius: 3px
+      resize: none
+      height: 20%
+      width: 95%
+
+  #more
+    
+    margin-bottom: 25px
+    h3
+        color: $buttonsColor
+    label
+      margin-right: 20px
+      height: 25px
+
+      input
+        margin-right: 10px
 
   .b1
     background: $buttonsColor
@@ -30,3 +76,4 @@
     height: 60px
     width: 165px
     border-radius: 5px
+    margin-bottom: 20px
