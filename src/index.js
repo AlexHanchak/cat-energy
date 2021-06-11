@@ -9,6 +9,7 @@ import {FoodstoreService} from "./services/foodstore-service";
 import {FoodstoreServiceProvider} from "./components/foodstore-service-context";
 import store from "./store";
 import './res.sass';
+import "bootstrap";
 
 const foodstoreService = new FoodstoreService();
 

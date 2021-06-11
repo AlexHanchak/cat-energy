@@ -5,8 +5,11 @@
 /.pnp
 .pnp.js
 .idea
+.vscode
+.firebase
 # testing
 /coverage
+yarn.lock
 
 # production
 /build
